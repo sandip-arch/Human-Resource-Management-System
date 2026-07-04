@@ -1,0 +1,284 @@
+.profile-hero {
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, var(--bg-card), #1b162d);
+}
+
+.profile-hero-content {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.profile-hero-avatar {
+  width: 100px;
+  height: 100px;
+  background-color: var(--primary-dark);
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 800;
+  border: 2px solid var(--primary);
+  box-shadow: 0 10px 25px -5px rgba(124, 58, 237, 0.4);
+}
+
+.profile-hero-info {
+  flex: 1;
+}
+
+.profile-hero-name-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.profile-hero-name {
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.profile-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.profile-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.profile-meta-item svg {
+  color: var(--primary);
+}
+
+/* Profile split grid */
+.profile-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 30px;
+}
+
+@media (max-width: 992px) {
+  .profile-split-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Tabs list */
+.profile-tabs-header {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 24px;
+  gap: 12px;
+}
+
+.profile-tab-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 6px;
+  cursor: pointer;
+  position: relative;
+  transition: var(--transition-smooth);
+}
+
+.profile-tab-btn:hover {
+  color: var(--text-main);
+}
+
+.profile-tab-btn.active {
+  color: var(--primary);
+}
+
+.profile-tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--primary);
+}
+
+/* Private Details Cards */
+.private-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .private-info-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.info-card-title {
+  font-size: 16px;
+  color: var(--text-main);
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+}
+
+.info-label {
+  color: var(--text-dark);
+}
+
+.info-val {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+/* Profile Form update */
+.profile-update-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-submit-btn {
+  padding: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* About Sidebars */
+.profile-about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-card-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 8px;
+}
+
+.sidebar-about-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.skills-tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background-color: rgba(167, 139, 250, 0.05);
+  border: 1px solid var(--border-color);
+  color: var(--primary);
+  font-size: 11px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cert-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.cert-icon {
+  color: var(--color-warning);
+}
+
+.cert-name {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-main);
+  display: block;
+}
+
+.cert-meta {
+  font-size: 10px;
+  color: var(--text-dark);
+  display: block;
+}
+
+/* Rate & Bank Layouts */
+.card-header-with-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 10px;
+}
+
+.card-header-with-action .info-card-title {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.bank-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sm-group {
+  margin-bottom: 0;
+}
+
+.bank-edit-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.performance-rate-card {
+  border: 1.5px solid var(--primary);
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.15);
+}
+
+.rating-range-slider {
+  width: 100%;
+  accent-color: var(--primary);
+  background: var(--bg-card);
+  height: 6px;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  margin-top: 8px;
+}

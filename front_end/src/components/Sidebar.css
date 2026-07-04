@@ -1,0 +1,122 @@
+.sidebar {
+  width: 260px;
+  background-color: var(--bg-sidebar);
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px 20px;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar-header {
+  margin-bottom: 40px;
+  padding-left: 10px;
+}
+
+.sidebar-logo {
+  font-family: var(--font-display);
+  font-size: 20px;
+  color: #111827; /* Dark black text for ZYNEX logo */
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: var(--transition-smooth);
+}
+
+.sidebar-link:hover {
+  color: var(--text-main);
+  background-color: rgba(30, 133, 105, 0.04);
+}
+
+.sidebar-link.active {
+  color: #ffffff;
+  background-color: var(--primary); /* Solid teal background */
+  box-shadow: 0 4px 12px 0 rgba(30, 133, 105, 0.25);
+}
+
+.sidebar-link svg {
+  color: inherit;
+  transition: var(--transition-smooth);
+}
+
+.sidebar-link.active svg {
+  color: #ffffff;
+}
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  border-top: 1px solid var(--border-color);
+  padding-top: 24px;
+}
+
+.new-request-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--primary); /* Matching main teal color */
+  color: #ffffff;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+  box-shadow: 0 4px 14px 0 rgba(30, 133, 105, 0.2);
+}
+
+.new-request-btn:hover {
+  background-color: var(--primary-hover);
+  box-shadow: 0 6px 18px 0 rgba(30, 133, 105, 0.35);
+  transform: translateY(-1px);
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: transparent;
+  color: var(--color-danger);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.logout-btn:hover {
+  background-color: var(--color-danger-bg);
+  border-color: var(--color-danger);
+}
