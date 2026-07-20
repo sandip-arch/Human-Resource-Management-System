@@ -6,7 +6,7 @@
 # Nexus HRMS — Premium Employee & Payroll Ledger Portal
 A premium, modern Human Resource Management System (HRMS) styled with a clean emerald/teal green layout. Built with React (Vite) and Express (Node.js) backed by a MySQL database with a seamless JSON mock fallback engine.
 ---
-## 🚀 Key Features
+##  Key Features
 ### 1. Modern Light Theme Redesign
 * **Branding & Visuals**: Styled with a clean, high-contrast light theme featuring custom emerald/teal green primary accents (`#1e8569`), light grey background surfaces (`#f4f7f6`), and crisp white card wrappers.
 * **Separated Navigation Links**: Distinct routes for `/dashboard` (Overview Dashboard) and `/payroll` (Payroll Ledger) ensure sidebar active states highlight independently.
@@ -70,7 +70,7 @@ Open **`http://localhost:5173/`** in your browser.
 ---
 
 ## for login via sql database
-## 🔐 Seeded Accounts for Testing
+##  Seeded Accounts for Testing
 * **Admin / HR Account**:
   * **Email**: `admin@nexus.com`
   * **Password**: `admin123` (or any password in mock fallback mode)
@@ -80,7 +80,7 @@ Open **`http://localhost:5173/`** in your browser.
 
 
 ---
-## 🔐 Seeded Accounts for Testing
+##  Seeded Accounts for Testing
 * **Admin / HR Account**:
   * **Email**: `admin@nexus.com` / **Employee ID**: `OIERRO20250005`
   * **Password**: `admin123` (or any password in mock fallback mode)
